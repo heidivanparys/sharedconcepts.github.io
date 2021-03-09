@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+  pull_request:
 
 jobs:
   build:
@@ -18,9 +19,10 @@ jobs:
       id: adocbuild
       uses: avattathil/asciidoctor-action@master
       with:
-        program: "asciidoctor -D . --backend=html5 -o docs/index.html README.adoc"
+        program: make
 
     - name: Deploy docs to ghpages
+      if: github.ref == 'refs/heads/master'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
