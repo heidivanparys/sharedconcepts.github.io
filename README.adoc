@@ -1,6 +1,9 @@
 = Shared Concepts
 
-== Workshop: "`Achieving a shared understanding of concepts`"
+[sidebar]
+"Achieving a shared understanding of concepts"
+
+== Workshop on Terminology and Shared Concepts
 
 Join us on the 13th and the 15th of April for an exchange of views on how to achieve a shared understanding of concepts - terminology and definitions - across domains.
 
